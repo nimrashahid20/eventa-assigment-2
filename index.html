@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<!-- .....................Question:01........................... -->
+    
+ <form id="submission">
+<label for="name">Name:</label><br>
+<input type="text" id="name"><br>
+
+<label for="email">Email:</label><br>
+<input type="text" id="email"><br>
+
+<label for="pasword">Password:</label><br>
+<input type="password" id="password"><br><br>
+
+<input type="submit" value="signup"><br>
+ </form>
+
+ <div id="formData">
+    <h2><i>Submitted Form</i></h2>
+    <p><strong>Name:</strong><span id="displayName"></span></p>
+    <p><strong>Email:</strong><span id="displayEmail"></span></p>
+    <p><strong>Pasword:</strong><span id="displayPassword"></span></p>
+</div> 
+
+<!-- ......................Question:02....................................... -->
+
+<div clas="container">
+    <h2>Title More</h2>
+    <p>This is the introduction of the item. It contains some brief details that are immediately visible to the user.
+        <span class="moretext">Here is the additional content that will be revealed when the "Read More" button is clicked. 
+            This part includes more in-depth information about the item, its features, benefits, and other important details 
+            that the user might be interested in</span>
+        </p>
+            <button class="read-more-btn" onclick="readmore()">Read More</button>
+</div>
+<!-- ............................Question:o3.................................... -->
+
+
+
+<div class="data">
+    <h2>Student Management Data</h2>
+    <form id="form2">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" required><br><br>
+        
+        <label for="grade">Grade:</label>
+        <input type="text" id="grade" name="grade" required><br><br>
+
+        <input type="submit" value="Add Student">
+    </form>
+</div>
+<br>
+<table class="student-table">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Grade</th>
+            <th>Actions</th> 
+        </tr>
+    </thead>
+    <tbody></tbody>
+</table>
+<br>
+<div class="form-container hidden" id="editFormContainer">
+    <h3>Edit Student</h3>
+    <form id="editForm">
+        <label for="editName">Name:</label>
+        <input type="text" id="editName" name="editName" required><br><br>
+        
+        <label for="editAge">Age:</label>
+        <input type="number" id="editAge" name="editAge" required><br><br>
+        
+        <label for="editGrade">Grade:</label>
+        <input type="text" id="editGrade" name="editGrade" required><br><br>
+
+        <input type="submit" value="Update Student">
+        <input type="button" value="Cancel" id="cancelEdit">
+    </form>
+</div>
+
+
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
